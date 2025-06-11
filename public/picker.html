@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Google Picker Integration</title>
-  <!-- Load env.js first to populate window.__GOOGLE_API_KEY__ -->
-  <script src="https://intrackt-tailor-picker.vercel.app/env.js"></script>
-  <!-- Load Google API client library -->
-  <script src="https://apis.google.com/js/api.js"></script>
+  <title>Google Picker</title>
 </head>
 <body>
   <button id="pick">Open Google Drive Picker</button>
-  <div id="result"></div>
-  <script src="picker.js"></script>
+  <p id="result"></p>
+
+  <script src="./env.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="./picker.js"></script>
 </body>
 </html>
