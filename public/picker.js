@@ -1,6 +1,6 @@
 console.log("📦 picker.js loaded");
 
-const DEVELOPER_KEY = import.meta.env.GOOGLE_API_KEY;
+const DEVELOPER_KEY = window.__GOOGLE_API_KEY__;
 const APP_ID = "731813032920";
 const oauthToken = new URLSearchParams(window.location.search).get("token");
 

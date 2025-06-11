@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Google Picker</title>
+
+  <!-- ✅ Inject API key from environment -->
+  <script>
+    window.__GOOGLE_API_KEY__ = "{{GOOGLE_API_KEY}}";
+  </script>
+
+  <!-- Your actual script -->
   <script src="./picker.js" defer></script>
 </head>
 <body>
