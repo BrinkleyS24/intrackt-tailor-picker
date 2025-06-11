@@ -43,7 +43,8 @@ function openPicker() {
         window.close();
       } else if (data.action === google.picker.Action.CANCEL) {
         console.log("❌ Picker closed or cancelled");
-        window.close();
+        document.getElementById("message").textContent = "Picker was canceled.";
+        document.querySelector(".spinner").style.display = "none";
       }
     })
     .build();
